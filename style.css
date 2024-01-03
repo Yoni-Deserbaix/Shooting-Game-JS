@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+    background: url("background_game.jpg");
+    background-position: bottom;
+}
+
+
+button {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: solid 2px #3C7103;
+    background-color: #3C7103;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.game__infos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    height: 400px;
+    width: 500px;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    cursor: crosshair;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-shadow: 0 0 5px rgb(0,0,0,0.1);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+#target {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    transition: 0.25s;
+    animation: animateTarget 10s infinite;
+}
+
+
+
+@keyframes animateTarget {
+    to {
+        transform: translateY(-200px) rotate(90deg);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    button {
+        font-size: 15px;
+    }
+
+    .game__infos {
+        font-size: 15px;
+    }
+
+    .container {
+        height: 300px;
+        width: 250px;
+        font-size: 15px;
+    }
+    #target {
+        height: 40px;
+        width: 40px;
+    }
+}
