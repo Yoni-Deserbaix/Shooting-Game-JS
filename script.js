@@ -20,7 +20,7 @@ btn.addEventListener("click", () => {
     // Create target
     let target = document.createElement("img");
     target.id = "target";
-    target.src = "/Images/zombie.png";
+    target.src = "Images/zombie.png";
     container.appendChild(target);
 
     // Condition to include target into the size of the container
@@ -41,7 +41,7 @@ btn.addEventListener("click", () => {
     target.addEventListener("click", (e) => {
       if (e.target.id === "target") {
         score += 1;
-        e.target.src = "/Images/tombstone.png";
+        e.target.src = "Images/tombstone.png";
       }
     });
 
@@ -63,7 +63,7 @@ btn.addEventListener("click", () => {
   PowerUpinterval = setInterval(() => {
     let powerUp = document.createElement("img");
     powerUp.id = "target";
-    powerUp.src = "/Images/clock.png";
+    powerUp.src = "Images/clock.png";
     container.appendChild(powerUp);
 
     // Condition to include power up into the size of the container
@@ -83,7 +83,7 @@ btn.addEventListener("click", () => {
     powerUp.addEventListener("click", (e) => {
       if (e.target.id === "target") {
         time += 3; // Increase time by 3 seconds when power-up is clicked
-        e.target.src = "/Images/3seconds.png";
+        e.target.src = "Images/3seconds.png";
         e.target.style.opacity = "0";
         setTimeout(() => {
           e.target.style.transition = "opacity 0.5s";
