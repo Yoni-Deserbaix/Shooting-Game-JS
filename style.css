@@ -12,7 +12,7 @@ body {
     justify-content: center;
     height: 100vh;
     color: #fff;
-    background: url("background_game.jpg");
+    background: url("/Images/background_game.jpg");
     background-position: bottom;
 }
 

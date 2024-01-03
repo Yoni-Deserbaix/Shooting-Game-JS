@@ -15,7 +15,7 @@ btn.addEventListener("click", () => {
     // Create target
     let target = document.createElement("img");
     target.id = "target";
-    target.src = "zombie.png";
+    target.src = "/Images/zombie.png";
     container.appendChild(target);
 
     // Condition to include target into the size of the container
@@ -36,7 +36,7 @@ btn.addEventListener("click", () => {
     target.addEventListener("click", (e) => {
       if (e.target.id === "target") {
         score += 1;
-        e.target.src = "tombstone.png";
+        e.target.src = "/Images/tombstone.png";
       }
     });
     time -= 1;
