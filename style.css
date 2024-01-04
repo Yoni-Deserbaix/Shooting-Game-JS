@@ -63,7 +63,16 @@ button {
     animation: animateTarget 10s infinite;
 }
 
-
+footer {
+    position: absolute; 
+    bottom: 0;
+    justify-content: center;
+    align-items: flex-end; 
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    padding: 20px;
+  }
 
 @keyframes animateTarget {
     to {
@@ -90,4 +99,7 @@ button {
         height: 40px;
         width: 40px;
     }
+    footer {
+        font-size: 17px;
+      }
 }
